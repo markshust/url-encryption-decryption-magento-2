@@ -1,0 +1,15 @@
+<?php
+/** @var Magento\Framework\View\Element\Template $block */
+/** @var Macademy\SecretUrl\ViewModel\Url $urlVm */
+$urlVm = $block->getData('url_vm');
+$filename = 'my-secret-file.pdf';
+$secretPath = $urlVm->getSecretUrl($filename);
+?>
+<div class="block block-encrypted-encoded-url">
+    <div class="block-title">
+        <strong><?= __('Your Special URL') ?></strong>
+    </div>
+    <div class="block-content">
+        <p><a href="<?= $secretPath ?>" target="_blank"><?= $filename ?></a></p>
+    </div>
+</div>
