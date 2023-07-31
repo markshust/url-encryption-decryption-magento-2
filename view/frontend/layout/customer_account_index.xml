@@ -4,7 +4,7 @@
         <referenceContainer name="main">
             <block name="encrypted.encoded.url" template="Macademy_SecretUrl::encrypted-encoded-url.phtml">
                 <arguments>
-                    <argument name="url_vm" xsi:type="object">Macademy\SecretUrl\ViewModel\Url</argument>
+                    <argument name="url_view_model" xsi:type="object">Macademy\SecretUrl\ViewModel\Url</argument>
                 </arguments>
             </block>
         </referenceContainer>

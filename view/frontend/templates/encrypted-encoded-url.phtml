@@ -1,9 +1,9 @@
 <?php
 /** @var Magento\Framework\View\Element\Template $block */
-/** @var Macademy\SecretUrl\ViewModel\Url $urlVm */
-$urlVm = $block->getData('url_vm');
+/** @var Macademy\SecretUrl\ViewModel\Url $urlViewModel */
+$urlViewModel = $block->getData('url_view_model');
 $filename = 'my-secret-file.pdf';
-$secretPath = $urlVm->getSecretUrl($filename);
+$secretPath = $urlViewModel->getSecretUrl($filename);
 ?>
 <div class="block block-encrypted-encoded-url">
     <div class="block-title">
