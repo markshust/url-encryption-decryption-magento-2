@@ -17,7 +17,7 @@ class Url implements ArgumentInterface
         private readonly UrlInterface $url,
     ) {}
 
-    public function getSecretPath($filename): string
+    private function getSecretPath($filename): string
     {
         $encryptedFilename = $this->encryptor->encrypt($filename);
 
